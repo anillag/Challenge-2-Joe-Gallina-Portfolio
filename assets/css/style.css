@@ -1,0 +1,75 @@
+/* Globals */
+
+:root {
+    --primary-color: red;
+    --secondary-color: blue;
+    --text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+/* Tags */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: var(--text-shadow);
+}
+
+header a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header nav {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+    text-shadow: var(--text-shadow);
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer div div ul {
+    list-style: none;
+}
+
+/* Classes */
+
+.flex-row {
+    display: flex;
+}
