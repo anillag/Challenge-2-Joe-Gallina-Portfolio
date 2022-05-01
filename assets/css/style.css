@@ -23,9 +23,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 10;
 }
 
 header h1 {
@@ -72,4 +69,48 @@ footer div div ul {
 
 .flex-row {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.tagline {
+    background-image: url("../img/banner.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    padding: 80px 20px 20px 20px;
+    color: white;
+}
+
+.title h2 {
+    flex: 25%;
+    text-align: right;
+    padding-right: 25px;
+    margin: 25px;
+    border-right: 5px solid red;
+}
+
+.titletext {
+    flex: 75%;
+    padding: 25px 0;
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-primary {
+    flex-wrap: wrap;
+    order: 1;
+    flex: 2 1 100%;
+    border: 1px solid lime;
+}
+
+.work-secondary {
+    flex-wrap: wrap;
+    order: 2;
+    flex: 1 1 49%;
+    border: 1px solid red;
 }
