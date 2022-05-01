@@ -9,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* Tags */
@@ -97,10 +97,6 @@ footer div div ul {
     padding: 25px 0;
 }
 
-#work {
-    display: flex;
-    flex-wrap: wrap;
-}
 .work-primary {
     flex-wrap: wrap;
     order: 1;
