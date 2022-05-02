@@ -1,8 +1,9 @@
 /* Globals */
 
 :root {
-    --primary-color: red;
+    --primary-color: slategray;
     --secondary-color: blue;
+    --tertiary-color: yellow;
     --text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -16,6 +17,7 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: ivory;
 }
 
 header {
@@ -33,11 +35,6 @@ header h1 {
     text-shadow: var(--text-shadow);
 }
 
-header a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
 header nav {
     margin: 0;
 }
@@ -45,8 +42,6 @@ header nav {
 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
@@ -57,12 +52,17 @@ header nav ul li a {
     text-shadow: var(--text-shadow);
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+footer div div ul li a {
+    margin-right: 25px;
 }
 
-footer div div ul {
-    list-style: none;
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Classes */
@@ -80,8 +80,8 @@ footer div div ul {
     background-size: cover;
     display: flex;
     justify-content: right;
-    padding: 80px 20px 20px 20px;
-    color: white;
+    padding: 100px 20px 20px 20px;
+    color: var(--tertiary-color);
 }
 
 .title h2 {
@@ -94,19 +94,42 @@ footer div div ul {
 
 .titletext {
     flex: 75%;
-    padding: 25px 0;
+    padding: 25px 50px 0 0;
+    position: relative;
 }
 
 .work-primary {
     flex-wrap: wrap;
     order: 1;
     flex: 2 1 100%;
-    border: 1px solid lime;
+    background-image: url("https://anillag.github.io/run-buddy/assets/images/hero-bg.jpg");
+    background-size: cover;
+    background-position: 80%;
+    min-height: 400px;
+    margin: 5px;
+    color: var(--tertiary-color);
 }
 
 .work-secondary {
     flex-wrap: wrap;
     order: 2;
-    flex: 1 1 49%;
-    border: 1px solid red;
+    flex: 1 1 45%;
+    color: var(--tertiary-color);
+    background-size: cover;
+    background-position: 80%;
+    min-height: 200px;
+    text-shadow: var(--text-shadow);
+    margin: 5px;
+}
+
+.horiseon {
+    background-image: url("https://anillag.github.io/Challenge-1-Horiseon/assets/images/digital-marketing-meeting.jpg");
+}
+
+.robot-gladiators {
+    background-image: url("../img/robotgladiators.png");
+}
+
+.under-construction {
+    background-image: url("../img/under-construction.png");
 }
