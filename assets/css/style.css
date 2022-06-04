@@ -130,6 +130,38 @@ a:hover {
     background-image: url("../img/robotgladiators.png");
 }
 
+.taskinator {
+    background-image: url("../img/taskinator.png");
+}
+
+.password-generator {
+    background-image: url("../img/password-generator.png");
+}
+
+.taskmaster-pro {
+    background-image: url("../img/taskmaster-pro.png");
+}
+
+.quiz {
+    background-image: url("../img/quiz.png");
+}
+
+.git-it-done {
+    background-image: url("../img/git-it-done.png");
+}
+
+.work-day-scheduler {
+    background-image: url("../img/work-day-scheduler.png");
+}
+
+.weather-dashboard {
+    background-image: url("../img/weather-dashboard.png");
+}
+
+.business-planner {
+    background-image: url("../img/business-planner.png");
+}
+
 .under-construction {
     background-image: url("../img/under-construction.png");
 }
